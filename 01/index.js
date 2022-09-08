@@ -1,5 +1,5 @@
-let altura = 1.71;
-let peso = 72;
+let altura = 1.79;
+let peso = 76;
 let tabela = {
     abaixoDoPeso: "imc < 18,5",
     normal: "imc < 25",
@@ -19,7 +19,9 @@ function solucao(a, p) {
     } else {
         result = "Obessidade";
     }
-    console.log(tabela);
+    console.log(
+        `Tabela\nAbaixo do peso:${tabela.abaixoDoPeso}\nNormal: ${tabela.normal}\nExcesso de peso: ${tabela.excessoDePeso}\nObessidade: ${tabela.obessidade}\n`
+    );
     return `Seu IMC: ${imc.toFixed(1)}\nClassificação: ${result}`;
 }
 console.log(solucao(altura, peso));
